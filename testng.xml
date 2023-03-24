@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true" name="Chrome-Test">
+        <parameter name="browser" value="chrome"/>
+        <parameter name="url" value="https://www.ebay.com/" />
+        <classes>
+            <class name="org.example.Main">
+                <methods>
+                </methods>
+            </class>
+            <class name="org.example.MobileCheckoutProcess">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectProductCategory"/>
+                    <include name="searchTypeMobilePhone"/>
+                    <include name="clickSearchButton"/>
+                    <include name="selectMobileBrand"/>
+                    <include name="SelectFirstSearchItem"/>
+                </methods>
+            </class>
+            <class name="org.example.MobileCheckoutRedirectPage">
+                <methods>
+                    <include name="selectModel"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorage"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetics"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="selectAddToCart"/>
+                    <include name="assertSelectedDetails"/>
+                    <include name="assertQuantity"/>
+                    <include name="subtotal"/>
+                    <include name="getShippingValue"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test verbose="4" preserve-order="true" name="Firefox-Test">
+        <parameter name="browser" value="firefox"/>
+        <parameter name="url" value="https://www.ebay.com/" />
+        <classes>
+            <class name="org.example.Main">
+                <methods>
+                </methods>
+            </class>
+            <class name="org.example.MobileCheckoutProcess">
+                <methods>
+                    <include name="getUrl"/>
+                    <include name="verifyUrl"/>
+                    <include name="selectProductCategory"/>
+                    <include name="searchTypeMobilePhone"/>
+                    <include name="clickSearchButton"/>
+                    <include name="selectMobileBrand"/>
+                    <include name="SelectFirstSearchItem"/>
+                </methods>
+            </class>
+            <class name="org.example.MobileCheckoutRedirectPage">
+                <methods>
+                    <include name="selectModel"/>
+                    <include name="selectCarrier"/>
+                    <include name="selectStorage"/>
+                    <include name="selectColor"/>
+                    <include name="selectCosmetics"/>
+                    <include name="getItemName"/>
+                    <include name="getItemPrice"/>
+                    <include name="getItemCondition"/>
+                    <include name="getItemQuantity"/>
+                    <include name="selectAddToCart"/>
+                    <include name="assertSelectedDetails"/>
+                    <include name="assertQuantity"/>
+                    <include name="subtotal"/>
+                    <include name="getShippingValue"/>
+                    <include name="closeBrowser"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
